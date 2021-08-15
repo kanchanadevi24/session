@@ -290,7 +290,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '_8WZg-apOVenAmedOZEsYaodNhGjT5sPDkMnGycePn9SZYYM28uoVUXCLqq6rBCOzWHN9uXACg';
+$settings['hash_salt'] = '3ehQ0y2ZBnoCplPxZ4u68qnflPZvhyMCyyTUqzi7QIngFQ6usVDWxP7bXeooBViu8gZbwoWV4Q';
 
 /**
  * Deployment identifier.
@@ -792,11 +792,11 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
 $databases['default']['default'] = array (
-  'database' => 'session',
+  'database' => 'drupalnew',
   'username' => 'root',
   'password' => '',
   'prefix' => '',
@@ -805,4 +805,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_n2oiUdqurz4TggPaGfq1jMa71brpQkLb1nMlRfmZe9Vg9KhOEyzbTNKgwZyh2hdKX1bM9WB2mA/sync';
+$settings['config_sync_directory'] = 'sites/default/files/config_a-TlmHoX2mvwkGJOHu7_WIODRjGgcvMmwGhPZd4SJXXvlarrKhr01Xtlvsy0NCdkuaVuICDDpQ/sync';
